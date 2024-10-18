@@ -18,6 +18,25 @@ some.addEventListener("mouseout",()=>{
 
 })
 
+let i = 2;
+const img = document.querySelectorAll("section div img")
+
+const fade = () =>{
+    if(i != 0) {
+        img[i].style.opacity = 0;
+        img[i].style.transition = "all 1s"
+        i--
+    } else if(i ===0){
+        img[2].style.opacity = 1;
+        img[1].style.opacity = 1;
+        i = 2;
+
+    }
+
+}
+
+setInterval(fade, 1500)
+
 
 const li = document.querySelectorAll("#notice ul li")
 const popup = document.getElementById("popup")
