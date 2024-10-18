@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+*{margin:0; padding:0; box-sizing: border-box;}
+#layout{max-width: 1200px; border: 1px solid green; margin: auto; position: relative;}
+img{max-width: 100%; display: block;}
+h1{display: none;}
+
+header{display:flex; background: black; 
+    justify-content: space-between; height:110px; padding-top: 10px;}
+header>a {margin-left: 1vw; flex:1}
+header ul{display:flex; flex:2; 
+  justify-content: space-around; padding-top: 59px; margin-top: 10px; 
+  list-style: none;  margin-right: 1vw; overflow: hidden; }
+
+header ul:hover{height: 500px; background-color: 0,0,0,0.75; overflow: visible;}
+header ul li a{text-decoration: none; color:white; z-index: 2; margin-bottom: 20px;}
+header ul li nav a{display:block;position: relative; }
+header ul li nav a:hover{color:gold}
+.sub{margin-top: 15px;}
+
+
+#something{background-color: rgba(0,0,0,0.75); position: absolute; z-index: 1;
+    width:100%; /*height:170px;*/ height:0;}
+
+section{margin: 40px 0 40px 0;}
+section div{position: relative; width:100%}
+section div img:not(:first-of-type){position: absolute; top:0; left:0;}
+main{display: flex; justify-content: space-between;}
+main div{flex:1;}
+
+main h2{margin-bottom: 20px; color:crimson; padding: 4px 2px; 
+    border: 1px solid crimson; display:inline-block;
+    font-size:small}
+
+#notice{margin-left: 10px;}
+#notice ul{list-style: none;}
+#notice li{padding-bottom: 5px; border-bottom: 2px dotted #666;
+    color: #666; margin-bottom: 10px;}
+ #notice li a{text-decoration: none; color: #666;
+    }
+
+#notice a:hover{color:red;}
+
+#notice span{float: right;}
+
+#gallery {margin-left: 50px;}
+#gallery div{display: flex; }
+#gallery img {margin:20px 10px 20px 10px ; width:30%}
+
+#banner h2{opacity: 0;}
+#banner{margin-left: 20px;}
+
+footer{display:flex; background: #e6e6e6;  justify-content: space-between;
+    margin-top: 40px}
+footer p{font-size: 0.9em; line-height: 180%;
+    padding: 5px 0 5px 0.5vw; }
+footer div{ margin: auto;}
+
+#popup{position: fixed; display: flex; align-items: center; display:none;
+    top:0; left:0; background: rgba(0,0,0,0.90); height:100%; width:100%}
+
+#popup div{ margin: auto; position: relative;
+     display: inline-block; background: white; padding: 2px 30px 20px 30px;}
+#popup p{background: black; font-weight: bold; padding: 7px 0; color:white; text-align: center;}
+#popup img{width:400px; margin-top: 15px;}
+#popup button{ position: relative; left:90%; padding: 2px 4px;
+     border:1px solid black; border-radius: 0;}
